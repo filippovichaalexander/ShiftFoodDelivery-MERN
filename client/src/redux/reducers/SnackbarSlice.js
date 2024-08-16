@@ -12,11 +12,10 @@ const snackbar = createSlice({
   reducers: {
     openSnackbar: (state, action) => {
       state.open = true;
-      state.message = action.payload.message;
       state.severity = action.payload.severity;
     },
     closeSnackbar: (state) => {
-      state.open = false;
+      state.open = true;
     },
   },
 });

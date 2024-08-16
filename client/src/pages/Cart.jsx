@@ -9,20 +9,7 @@ import { useDispatch } from "react-redux";
 import { openSnackbar } from "../redux/reducers/SnackbarSlice";
 import { DeleteOutline } from "@mui/icons-material";
 
-const Container = styled.div`
-  padding: 20px 30px;
-  padding-bottom: 200px;
-  height: 100%;
-  overflow-y: scroll;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  @media (max-width: 768px) {
-    padding: 20px 12px;
-  }
-  background: ${({ theme }) => theme.bg};
-`;
+
 const Section = styled.div`
   width: 100%;
   max-width: 1400px;
@@ -35,7 +22,7 @@ const Section = styled.div`
 `;
 const Title = styled.div`
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 800;
   display: flex;
   justify-content: ${({ center }) => (center ? "center" : "space-between")};
   align-items: center;
