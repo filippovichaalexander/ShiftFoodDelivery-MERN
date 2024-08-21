@@ -65,23 +65,23 @@ const CloseButton = styled.div`
   }
 `;
 
-const Text = styled.p`
-  display: flex;
-  gap: 12px;
-  font-size: 16px;
-  text-align: center;
-  color: ${({ theme }) => theme.text_secondary};
-  margin-top: 16px;
-  @media (max-width: 400px) {
-    font-size: 14px;
-  }
-`;
-const TextButton = styled.div`
-  color: ${({ theme }) => theme.primary};
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
-`;
+// const Text = styled.p`
+//   display: flex;
+//   gap: 12px;
+//   font-size: 16px;
+//   text-align: center;
+//   color: ${({ theme }) => theme.text_secondary};
+//   margin-top: 16px;
+//   @media (max-width: 400px) {
+//     font-size: 14px;
+//   }
+// `;
+// const TextButton = styled.div`
+//   color: ${({ theme }) => theme.primary};
+//   cursor: pointer;
+//   transition: all 0.3s ease;
+//   font-weight: 600;
+// `;
 
 const Authentication = ({ openAuth, setOpenAuth }) => {
   const [login, setLogin] = useState(true);
@@ -92,7 +92,7 @@ const Authentication = ({ openAuth, setOpenAuth }) => {
           <Logo src={LogoImage} />
           <Image src={AuthImage} />
         </Left>
-        <Right>
+        {/* <Right>
           <CloseButton>
             <Close onClick={() => setOpenAuth(false)} />
           </CloseButton>
@@ -114,7 +114,7 @@ const Authentication = ({ openAuth, setOpenAuth }) => {
               </Text>
             </>
           )}
-        </Right>
+        </Right> */}
       </Container>
     </Modal>
   );
