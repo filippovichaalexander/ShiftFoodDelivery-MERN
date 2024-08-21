@@ -192,13 +192,13 @@ const Cart = () => {
         return;
       }
 
-      // const token = localStorage.getItem("krist-app-token");
-      // const totalAmount = calculateSubtotal().toFixed(2);
-      // const orderDetails = {
-      //   products,
-      //   address: convertAddressToString(deliveryDetails),
-      //   totalAmount,
-      // };
+      const token = localStorage.getItem("krist-app-token");
+      const totalAmount = calculateSubtotal().toFixed(2);
+      const orderDetails = {
+        products,
+        address: convertAddressToString(deliveryDetails),
+        totalAmount,
+      };
 
       await placeOrder(token, orderDetails);
       dispatch(
